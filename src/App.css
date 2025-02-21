@@ -1,6 +1,6 @@
 /* App.css */
 body {
-  background: radial-gradient(circle at top left, #1a1a2e, #0f0f1e);
+  background: radial-gradient(circle at top left,rgb(228, 188, 239),rgb(219, 219, 244));
   color: #ffffff;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  background: rgba(30, 30, 30, 0.8);
+  background: rgba(248, 240, 249, 0.8);
   padding: 40px;
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -39,8 +39,8 @@ textarea {
   width: 100%; /* Ensures full width inside container */
   max-width: 600px; /* Prevents stretching too much */
   height: 180px;
-  background-color: rgba(43, 43, 43, 0.9);
-  color: #ffffff;
+  background-color: rgba(255, 251, 251, 0.9);
+  color:rgb(2, 2, 2);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 15px;
   border-radius: 10px;
@@ -61,7 +61,7 @@ button {
   margin-top: 20px;
   padding: 14px;
   background: linear-gradient(45deg, #007bff, #00c6ff);
-  color: #ffffff;
+  color:rgb(11, 11, 11);
   border: none;
   border-radius: 10px;
   cursor: pointer;

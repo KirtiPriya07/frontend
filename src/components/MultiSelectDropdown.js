@@ -4,7 +4,8 @@ const MultiSelectDropdown = ({ setSelectedFilters }) => {
   const options = ["Alphabets", "Numbers", "Highest Alphabet"];
 
   const handleChange = (event) => {
-    const selectedValues = Array.from(event.target.selectedOptions, (option) => option.value);
+    // Get all selected option values as an array
+    const selectedValues = Array.from(event.target.selectedOptions, option => option.value);
     setSelectedFilters(selectedValues);
   };
 

@@ -59,7 +59,8 @@ function App() {
             />
             <button onClick={handleSubmit}>Submit</button>
 
-            <p className="disclaimer">Select a filter</p>
+            <p className="disclaimer" style={{ color: "black" }}>Select a filter</p>
+
 
             {error && <p className="error">{error}</p>}
 
