@@ -1,0 +1,105 @@
+/* App.css */
+body {
+  background: radial-gradient(circle at top left, #1a1a2e, #0f0f1e);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(30, 30, 30, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all child elements */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+textarea {
+  width: 100%; /* Ensures full width inside container */
+  max-width: 600px; /* Prevents stretching too much */
+  height: 180px;
+  background-color: rgba(43, 43, 43, 0.9);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  width: 100%;
+  max-width: 600px; /* Matches textarea width */
+  margin-top: 20px;
+  padding: 14px;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #00c6ff, #007bff);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+}
+
+.error {
+  color: #ff4d4d;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  textarea {
+    height: 150px;
+    max-width: 100%;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
