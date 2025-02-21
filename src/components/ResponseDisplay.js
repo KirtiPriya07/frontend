@@ -9,6 +9,7 @@ const ResponseDisplay = ({ response, selectedFilters }) => {
         {selectedFilters.includes("Alphabets") && `Alphabets: ${JSON.stringify(response.alphabets)}\n`}
         {selectedFilters.includes("Highest Alphabet") &&
           `Highest Alphabet: ${JSON.stringify(response.highest_alphabet)}\n`}
+        {selectedFilters.length === 0 && `${JSON.stringify(response)}`}
       </pre>
     </div>
   );

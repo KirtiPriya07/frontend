@@ -51,13 +51,15 @@ function App() {
 
     return (
         <div className="container">
-            <h1>BFHL Frontend</h1>
+            <h1>BAJAJ Finance Dev Challenge</h1>
             <textarea
                 placeholder='Enter JSON (e.g. { "data": ["A", "C", "z"] })'
                 value={jsonInput}
                 onChange={(e) => setJsonInput(e.target.value)}
             />
             <button onClick={handleSubmit}>Submit</button>
+
+            <p className="disclaimer">Select a filter</p>
 
             {error && <p className="error">{error}</p>}
 
